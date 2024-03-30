@@ -1,0 +1,29 @@
+.menu__button {
+  width: 40px;
+}
+
+.button-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+.button-box__element {
+  height: 2px;
+  background-color: var(--green);
+}
+
+
+.button-box-top {
+  width: 100%;
+}
+
+.button-box-inner {
+  width: 65%;
+}
+
+.button-box-bottom {
+  width: 25%;
+}
