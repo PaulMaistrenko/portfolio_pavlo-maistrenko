@@ -34,25 +34,27 @@ export const Menu = ({ setIsMenuOpen }) => {
             className="nav__link"
             onClick={handleMenuState}
           >
-            Contact
+            Contacts
           </NavLink>
         </li>
         <li className="nav__item">
           <NavLink
-            to="/" className="nav__link"
+            to="/"
+            className="nav__link"
+            onClick={() => setIsMenuOpen(false)}
           >
             Home
           </NavLink>
         </li>
         <li className="nav__item">
-          <a
-            href="https://drive.google.com/file/d/1bsD9vzK7F3IhTOrUMJVXGg6iu8cTysyP/view?usp=drive_link"
+          <NavLink
+            to="https://drive.google.com/file/d/1gn8pSq_oSFfB7OU71VvLzV25nurwP1qr/view?usp=drive_link"
             className="nav__link nav__link--button"
             target='_blank'
             rel="noreferrer"
           >
             Resume
-          </a>
+          </NavLink>
         </li>
       </ul>
       <Footer />
