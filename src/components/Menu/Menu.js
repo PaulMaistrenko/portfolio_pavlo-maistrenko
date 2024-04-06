@@ -1,10 +1,12 @@
 import { NavLink } from 'react-router-dom';
 import './menu.scss';
 import { Footer } from '../Footer';
+import { scrollToTop } from '../../services/scrollToTop';
 
 export const Menu = ({ setIsMenuOpen }) => {
   const handleMenuState = () => {
     setIsMenuOpen(false);
+    scrollToTop();
   }
 
   return (

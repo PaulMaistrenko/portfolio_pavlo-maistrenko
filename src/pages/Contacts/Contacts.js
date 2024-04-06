@@ -2,7 +2,8 @@ import { NavLink } from "react-router-dom";
 
 export const Contacts = () => {
   return (
-    <section className="contacts container">
+    <section className="contacts container" id="contacts">
+        <h1 className="section__title">My contacts</h1>
         <div className="contacts__content">
           <ul className="contacts__list">
           <li className="contacts__item">
@@ -56,6 +57,6 @@ export const Contacts = () => {
             referrerPolicy="no-referrer-when-downgrade"
           />
         </div>
-      </section>
+    </section>
   );
 }

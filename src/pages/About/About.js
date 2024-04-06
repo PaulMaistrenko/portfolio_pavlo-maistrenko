@@ -1,6 +1,7 @@
 export const About = () => {
   return (
-    <section className="about container">
+    <section className="about container" id="about">
+        <h1 className="section__title">About me</h1>
         <div className="about__photo"></div>
         <article className="about__content">
           <p className="accented-text">Hi, my name is</p>

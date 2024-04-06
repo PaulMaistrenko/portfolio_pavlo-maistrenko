@@ -1,8 +1,12 @@
 import { NavLink } from "react-router-dom";
 import { CrossButton } from "../CrossButton";
 import { MenuButton } from "../MenuButton";
+import { scrollToElement } from "../../services/scrollToElement";
+import { scrollToTop } from "../../services/scrollToTop";
+// import { useState } from "react";
 
 export const Header = ({ isMenuOpen, setIsMenuOpen }) => {
+
   return (
     <header className="header">
       <div className="container">
@@ -15,13 +19,28 @@ export const Header = ({ isMenuOpen, setIsMenuOpen }) => {
         <nav className="header__desktop">
           <ul className="nav__list">
             <li className="nav__item">
-              <NavLink to="/about" className="nav__link">about.</NavLink>
+              <NavLink
+                className="nav__link active"
+                onClick={() => scrollToTop()}
+              >
+                about.
+              </NavLink>
             </li>
             <li className="nav__item">
-              <NavLink to="/projects" className="nav__link">projects.</NavLink>
+              <NavLink
+                className="nav__link"
+                onClick={() => scrollToElement('projects')}
+              >
+                projects.
+              </NavLink>
             </li>
             <li className="nav__item">
-              <NavLink to="/contacts" className="nav__link">contacts.</NavLink>
+              <NavLink
+                className="nav__link"
+                onClick={() => scrollToElement('contacts')}
+              >
+                contacts.
+              </NavLink>
             </li>
           </ul>
           <NavLink
