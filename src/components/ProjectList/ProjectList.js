@@ -8,11 +8,21 @@ import  catalog from '../../images/blocks/projects/gadgets_catalog.bmp';
 import  todo_app from '../../images/blocks/projects/todo.png';
 import  game from '../../images/blocks/projects/2048_game_.png';
 import { Link } from 'react-router-dom';
+import { useState } from 'react';
+import classNames from 'classnames';
 
 export const ProjectList = () => {
+
+const [scrollPos, setScrollPos] = useState(0);
+
+const handleScroll = (e) => {
+  const { scrollTop } = e.currentTarget;
+  setScrollPos(scrollTop);
+}
+
   return (
-    <ul className="project__list">
-      <li className="project__card">
+    <ul className="project__list" onScroll={handleScroll}>
+      <li className={classNames("project__card", { "project__card--active": scrollPos >= 0 && scrollPos < 200 })}>
         <div className="project__info">
           <div className="project__top">
             <h3 className="project__title">Strategic Agency</h3>
@@ -33,9 +43,9 @@ export const ProjectList = () => {
           <div className="project__technologies">
             <p className="technologies__item">JavaScript</p>
             <p className="technologies__item">React</p>
-            <p className="technologies__item">TypeScript</p>
             <p className="technologies__item">HTML</p>
             <p className="technologies__item">SCSS</p>
+            <p className="technologies__item">FIGMA</p>
           </div>
         </div>
         <img
@@ -44,7 +54,7 @@ export const ProjectList = () => {
           className="card__img"
         />
       </li>
-      <li className="project__card">
+      <li className={classNames("project__card", { "project__card--active": scrollPos >= 200 && scrollPos < 600 })}>
         <div className="project__info">
           <div className="project__top">
             <h3 className="project__title">The Metropolitan Museum of Art</h3>
@@ -76,7 +86,7 @@ export const ProjectList = () => {
           className="card__img"
         />
       </li>
-      <li className="project__card">
+      <li className={classNames("project__card", { "project__card--active": scrollPos >= 600 && scrollPos < 900 })}>
         <div className="project__info">
           <div className="project__top">
             <h3 className="project__title">National Art Museum Of Ukraine</h3>
@@ -108,7 +118,7 @@ export const ProjectList = () => {
           className="card__img"
         />
       </li>
-      <li className="project__card">
+      <li className={classNames("project__card", { "project__card--active": scrollPos >= 900 && scrollPos < 1300 })}>
         <div className="project__info">
           <div className="project__top">
             <h3 className="project__title">Miami condo kings</h3>
@@ -140,7 +150,7 @@ export const ProjectList = () => {
           className="card__img"
         />
       </li>
-      <li className="project__card">
+      <li className={classNames("project__card", { "project__card--active": scrollPos >= 1300 && scrollPos < 1600 })}>
         <div className="project__info">
           <div className="project__top">
             <h3 className="project__title">Online-store catalog</h3>
@@ -173,7 +183,7 @@ export const ProjectList = () => {
           className="card__img"
         />
       </li>
-      <li className="project__card">
+      <li className={classNames("project__card", { "project__card--active": scrollPos >= 1600 && scrollPos < 1700 })}>
         <div className="project__info">
           <div className="project__top">
             <h3 className="project__title">Task manager</h3>
@@ -207,7 +217,7 @@ hooks, fetch, routing, and local storage.</p>
           className="card__img"
         />
       </li>
-      <li className="project__card">
+      <li className={classNames("project__card", { "project__card--active": scrollPos > 1700})}>
         <div className="project__info">
           <div className="project__top">
             <h3 className="project__title">Strategy squared</h3>

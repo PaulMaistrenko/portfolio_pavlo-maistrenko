@@ -11,10 +11,10 @@ export const About = () => {
             with foreign companies in the field of trade. Confronted with
             new technological solutions every day, I became increasingly
             fascinated by the development in the field of information technology.
-            Acquiring essential skills in determination, resilience, and perseverance,
-            coupled with my inclination to explore new facets of our daily lives
-            and my love for exact sciences, in 2021, I decided to embark on the
-            journey of learning web development.
+            Acquiring essential skills in determination, resilience and perseverance.
+            Combining these qualities along with my inclination to explore new facets
+            of our daily lives side by side with my love for exact sciences, in 2021,
+            I decided to embark on the journey of learning web development.
           </p>
           <p className="about-text">
             The decisive factor in choosing these technologies was the broad
