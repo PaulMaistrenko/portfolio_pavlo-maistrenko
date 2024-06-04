@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio_pavlo-maistrenko/static/css/main.01578e63.css",
-    "main.js": "/portfolio_pavlo-maistrenko/static/js/main.3278e6ff.js",
+    "main.css": "/portfolio_pavlo-maistrenko/static/css/main.13e0e18f.css",
+    "main.js": "/portfolio_pavlo-maistrenko/static/js/main.6b4ee89a.js",
     "static/media/gadgets_catalog.bmp": "/portfolio_pavlo-maistrenko/static/media/gadgets_catalog.ba4dd55446effcdced3f.bmp",
     "static/media/MET_landing.png": "/portfolio_pavlo-maistrenko/static/media/MET_landing.ee500b8d274d01c38eaa.png",
     "static/media/Miami_landing.png": "/portfolio_pavlo-maistrenko/static/media/Miami_landing.11c8cb824ec6d0e6ff58.png",
@@ -16,11 +16,11 @@
     "index.html": "/portfolio_pavlo-maistrenko/index.html",
     "static/media/linked-in_icon--green.svg": "/portfolio_pavlo-maistrenko/static/media/linked-in_icon--green.b9b144fbbaa251ad3c2c.svg",
     "static/media/linked-in_icon--light.svg": "/portfolio_pavlo-maistrenko/static/media/linked-in_icon--light.3c0a0ae84b6c1220dfd4.svg",
-    "main.01578e63.css.map": "/portfolio_pavlo-maistrenko/static/css/main.01578e63.css.map",
-    "main.3278e6ff.js.map": "/portfolio_pavlo-maistrenko/static/js/main.3278e6ff.js.map"
+    "main.13e0e18f.css.map": "/portfolio_pavlo-maistrenko/static/css/main.13e0e18f.css.map",
+    "main.6b4ee89a.js.map": "/portfolio_pavlo-maistrenko/static/js/main.6b4ee89a.js.map"
   },
   "entrypoints": [
-    "static/css/main.01578e63.css",
-    "static/js/main.3278e6ff.js"
+    "static/css/main.13e0e18f.css",
+    "static/js/main.6b4ee89a.js"
   ]
 }
