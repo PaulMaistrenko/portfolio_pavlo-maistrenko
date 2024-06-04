@@ -8,21 +8,12 @@ import  catalog from '../../images/blocks/projects/gadgets_catalog.bmp';
 import  todo_app from '../../images/blocks/projects/todo.png';
 import  game from '../../images/blocks/projects/2048_game_.png';
 import { Link } from 'react-router-dom';
-import { useState } from 'react';
-import classNames from 'classnames';
 
 export const ProjectList = () => {
 
-const [scrollPos, setScrollPos] = useState(0);
-
-const handleScroll = (e) => {
-  const { scrollTop } = e.currentTarget;
-  setScrollPos(scrollTop);
-}
-
   return (
-    <ul className="project__list" onScroll={handleScroll}>
-      <li className={classNames("project__card", { "project__card--active": scrollPos >= 0 && scrollPos < 200 })}>
+    <ul className="project__list">
+      <li className="project__card">
         <div className="project__info">
           <div className="project__top">
             <h3 className="project__title">Strategic Agency</h3>
@@ -54,7 +45,7 @@ const handleScroll = (e) => {
           className="card__img"
         />
       </li>
-      <li className={classNames("project__card", { "project__card--active": scrollPos >= 200 && scrollPos < 600 })}>
+      <li className="project__card">
         <div className="project__info">
           <div className="project__top">
             <h3 className="project__title">The Metropolitan Museum of Art</h3>
@@ -86,7 +77,7 @@ const handleScroll = (e) => {
           className="card__img"
         />
       </li>
-      <li className={classNames("project__card", { "project__card--active": scrollPos >= 600 && scrollPos < 900 })}>
+      <li className="project__card">
         <div className="project__info">
           <div className="project__top">
             <h3 className="project__title">National Art Museum Of Ukraine</h3>
@@ -118,7 +109,7 @@ const handleScroll = (e) => {
           className="card__img"
         />
       </li>
-      <li className={classNames("project__card", { "project__card--active": scrollPos >= 900 && scrollPos < 1300 })}>
+      <li className="project__card">
         <div className="project__info">
           <div className="project__top">
             <h3 className="project__title">Miami condo kings</h3>
@@ -150,7 +141,7 @@ const handleScroll = (e) => {
           className="card__img"
         />
       </li>
-      <li className={classNames("project__card", { "project__card--active": scrollPos >= 1300 && scrollPos < 1600 })}>
+      <li className="project__card">
         <div className="project__info">
           <div className="project__top">
             <h3 className="project__title">Online-store catalog</h3>
@@ -183,7 +174,7 @@ const handleScroll = (e) => {
           className="card__img"
         />
       </li>
-      <li className={classNames("project__card", { "project__card--active": scrollPos >= 1600 && scrollPos < 1700 })}>
+      <li className="project__card">
         <div className="project__info">
           <div className="project__top">
             <h3 className="project__title">Task manager</h3>
@@ -217,7 +208,7 @@ hooks, fetch, routing, and local storage.</p>
           className="card__img"
         />
       </li>
-      <li className={classNames("project__card", { "project__card--active": scrollPos > 1700})}>
+      <li className="project__card">
         <div className="project__info">
           <div className="project__top">
             <h3 className="project__title">Strategy squared</h3>
